@@ -567,8 +567,8 @@ $(document).ready(function($){
 	if ( $mapWrapper.length > 0 ) {
 		var map = new GMaps({
 			div: '#map',
-			lat : 23.79473005386213,
-			lng : 90.41430473327637,
+			lat : -6.296824, 
+			lng : 106.829795,
 			scrollwheel: false,
 			draggable: draggableOp,
 			zoom: 16,
@@ -577,11 +577,11 @@ $(document).ready(function($){
 		});
 
 		map.addMarker({
-			lat : 23.79473005386213,
-			lng : 90.41430473327637,
-			icon: 'images/marker-icon.png',
+			lat : -6.296824, 
+			lng : 106.829795,
+			icon: '/static/images/marker-icon.png',
 			infoWindow: {
-				content: '<p>BD InfoSys Ltd, Dhaka, Bangladesh</p>'
+				content: '<p>Graha Simatupang, South Jakarta, Indonesia</p>'
 			}
 		});
 	}
