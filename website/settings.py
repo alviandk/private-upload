@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-
+from django.forms import alvian
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
@@ -29,8 +29,8 @@ ALLOWED_HOSTS = []
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'lovelips.ahp@gmail.com'
-EMAIL_HOST_PASSWORD = 'lovelipspassword'
+EMAIL_HOST_USER = alvian.EMAIL
+EMAIL_HOST_PASSWORD = alvian.PASSWORD
 EMAIL_USE_TLS = True
 
 DEFAULT_FROM_EMAIL='(Backend) AlvianDK <no-reply@backend.com>'
