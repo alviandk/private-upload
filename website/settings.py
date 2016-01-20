@@ -12,7 +12,10 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-from django.forms import alvian
+try:
+	from django.forms import alvian
+except:
+	pass
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
@@ -29,8 +32,11 @@ ALLOWED_HOSTS = []
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = alvian.EMAIL
-EMAIL_HOST_PASSWORD = alvian.PASSWORD
+try:
+	EMAIL_HOST_USER = alvian.EMAIL
+	EMAIL_HOST_PASSWORD = alvian.PASSWORD
+except:
+	pass
 EMAIL_USE_TLS = True
 
 DEFAULT_FROM_EMAIL='(Backend) AlvianDK <no-reply@backend.com>'
@@ -48,9 +54,15 @@ INSTALLED_APPS = (
     'rest_framework',
     'rest_framework.authtoken',
 
+	#external-apps
+    'bootstrap3',
+    'registration',
+    
     #internal-apps
     'portofolio',
-    'board',
+    'board',    
+    'reviews',
+    
 )
 
 MIDDLEWARE_CLASSES = (
