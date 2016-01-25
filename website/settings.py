@@ -38,6 +38,8 @@ try:
 except:
 	pass
 EMAIL_USE_TLS = True
+LOGIN_REDIRECT_URL = '/reviews/review/user'
+
 
 DEFAULT_FROM_EMAIL='(Backend) AlvianDK <no-reply@backend.com>'
 # Application definition

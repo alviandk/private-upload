@@ -72,6 +72,7 @@ def user_recommendation_list(request):
     user_reviews_wine_ids = set(map(lambda x: x.wine.id, user_reviews))
 
     # get request user cluster name (just the first one righ now)
+    print request.user.username
     try:
         user_cluster_name = \
             User.objects.get(username=request.user.username).cluster_set.first().name
