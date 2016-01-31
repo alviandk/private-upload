@@ -53,17 +53,17 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     #drf
-    'rest_framework',
-    'rest_framework.authtoken',
+    #'rest_framework',
+    #'rest_framework.authtoken',
 
 	#external-apps
-    'bootstrap3',
-    'registration',
+    #'bootstrap3',
+    #'registration',
     
     #internal-apps
     'portofolio',
-    'board',    
-    'reviews',
+    #'board',    
+    #'reviews',
     
 )
 
