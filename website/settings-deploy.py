@@ -4,7 +4,7 @@ DEBUG = False
 
 TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = ['http://alviandk.com/','127.0.0.1']
+ALLOWED_HOSTS = ['alviandk.com','127.0.0.1']
 
 STATIC_ROOT='/home/alviandk/privat/static/'
 
