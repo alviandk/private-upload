@@ -48,7 +48,7 @@ class CVDownload(View):
 
 	def get (self,request):
 
-		filename='/home/alviandk/private-upload/static/CV.pdf'
+		filename='/home/alviandk/privat/private-upload/static/CV.pdf'
 		wrapper      = FileWrapper(open(filename))
 		content_type = mimetypes.guess_type(filename)[0]
 		response     = HttpResponse(wrapper,content_type=content_type)

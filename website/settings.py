@@ -110,15 +110,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_ROOT='/home/alvian/privat/upload/static/'
-STATIC_URL = '/static/'
+STATIC_URL = 'http://alviandk.com/static/'
+
 
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),    
-    '/home/alvian/privat/upload/website/static/',
+    
+   
+    '/home/alviandk/privat/private-upload/static/',
 )
 
 TEMPLATE_DIRS = (

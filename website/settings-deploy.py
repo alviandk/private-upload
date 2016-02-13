@@ -10,4 +10,6 @@ STATIC_ROOT='/home/alviandk/privat/static/'
 
 STATICFILES_DIRS = (    
     '/home/alviandk/privat/private-upload/static/',
+    
+
 )
