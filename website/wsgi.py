@@ -8,7 +8,14 @@ https://docs.djangoproject.com/en/1.7/howto/deployment/wsgi/
 """
 
 import os
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "website.settings")
+import sys
 
+path = '/home/alviandk/privat/private-upload'
+if path not in sys.path:
+    sys.path.append(path)
+#
+os.environ['DJANGO_SETTINGS_MODULE'] = 'website.settings'
+#
+## then, for django >=1.5:
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()

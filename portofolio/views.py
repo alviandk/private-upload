@@ -1,5 +1,6 @@
 import os
 import mimetypes
+from datetime import date
 
 from django.conf import settings
 from django.core.mail import send_mail
@@ -19,7 +20,9 @@ class HomeView(View):
     def get(self,request):
 
         form = KontakForm()
-        return render(request,self.template_name,{'form':form})
+        born_date = date(1994, 9, 4)
+        developer_date = date(2014,10,1)
+        return render(request,self.template_name,{'form':form, 'born_date':born_date, 'developer_date':developer_date})
 
     def post(self,request):
 
