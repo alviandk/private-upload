@@ -572,7 +572,7 @@ header.nav.hide-menu {
  ----------------------------------- */
 
 #home {
-    background: url('../../images/magang.jpg') no-repeat fixed center center / cover;
+    background: url('../../images/portfolio/cover.jpg') no-repeat fixed center center / cover;
 }
 
 #home .sec-overlay {
